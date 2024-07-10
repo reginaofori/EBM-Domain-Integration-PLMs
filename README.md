@@ -17,10 +17,15 @@ Evidence-based medicine (EBM) represents a cornerstone in medical research, guid
 For more details, please check the latest version of the paper
 
 
-### Methodology
+### Methodology 
 
-![Image Alt text](dual_encoder_naacl.PNG)
+- Training of the knowledge domain adapters
 
+![Image Alt text](images/AIME_paper_.PNG)
+
+- During Evaluation the knowledge domain adapters
+
+![Image Alt text](images/downstream_method_AIME.PNG)
 
 ###  Prerequisites
 ``` bash
