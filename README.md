@@ -38,24 +38,22 @@ For more details, please check the latest version of the paper
 
 ### Spanish SR Train/Test Dataset
 
-- Training Dataset: Spanish abstracts from 2009 to 2023 were collected from the [LILACS](https://lilacs.bvsalud.org/en/) database. To obtain abstract-queries pair for training, the titles of biomedical abstracts indexed and collected from the [LILACS](https://lilacs.bvsalud.org/en/) database were converted into questions/queries.
+- The proposed model underwent finetuning and evaluation on ten complex medical SLR
+abstract datasets encompassing both human and animal studies. These are the Aceves-Martins 2022, Aceves-Martins 2021 data,Muthu 2022,Van Dis, Wassenaar 2017, Menon 2022, Leenars 2019, Oud 2018, and Nelson 2006—are publicly available on the a modified [GitHub](https://github.com/asreview/synergy-dataset)
+
+| **Dataset**                | **Research Focus**                                                                  | **Papers retrieved** | **Total Papers** | **Total Included** | **Included papers** |
+|----------------------------|----------------------------------------------------------------------------------------|----------------------|------------------|--------------------|---------------------|
+| Aceves-Martins 2021 (AM 21) | Oral Health and obesity in children                                                   | 807                  | 807              | 18                 | 18                  |
+| Aceves-Martins 2022 (AM 22) | Nutritional status of prisoners                                                       | 13022                | 13022            | 69                 | 69                  |
+| Appenzeller-Herzog 2019 (AH) | Therapy for Wilson Disease                                                            | 2873                 | 2873             | 29                 | 29                  |
+| Leenars 2019 (LN)          | Animal to human translation                                                            | 5812                 | 5812             | 17                 | 17                  |
+| Menon 2022 (MN)            | Toxicology and environmental epidemiology                                              | 975                  | 975              | 74                 | 74                  |
+| Muthu 2021 (MU)            | Flexible bronchoscopy                                                                  | 2719                 | 2719             | 336                | 336                 |
+| Nelson 2002 (NN)           | Diabetic foot ulcers                                                                   | 366                  | 366              | 80                 | 80                  |
+| Oud 2018 (OH)              | Specialised psychotherapies for adults                                                 | 952                  | 952              | 20                 | 20                  |
+| Van Dis 2020 (VD)          | Cognitive Behavioral Therapy                                                           | 9128                 | 9128             | 72                 | 72                  |
 
 
-- Testing Dataset: To evaluate the performance of the investigated model, we used three biomedical human annotated Spanish SR case studies: **SB**: [Oral health and obesity in Mexico (salud bucal y obesidad en México)](https://academic.oup.com/nutritionreviews/article/80/6/1694/6402007?login=false), **SM**: [Mental health and obesity in Mexico (salud mental y obesidad en México)](https://academic.oup.com/nutritionreviews/article/81/6/658/6717764?login=false), and **PO**: [Obesity prevention in Mexican children (prevención de obesidad en ninos mexicanos)](https://link.springer.com/article/10.1007/s11121-021-01316-6).
-
-| **Dataset**          | **Research Question (Spanish)**                                                                              | **Papers retrieved (LILACS)** | **Total Papers** | **Total Included** | **Included papers (LILACS)** |
-|----------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------|------------------|--------------------|------------------------------|
-| Oral Health (SB)     | ¿Existe asociación entre obesidad o sobrepeso y mala salud bucal en niños y adolescentes mexicanos?           | 73                            | 9828             | 18                 | 3                            |
-| Mental Health (SM)   | ¿Cuál es la asociación entre la obesidad o el sobrepeso y los problemas de salud mental entre los niños y adolescentes mexicanos? | 35                            | 1074             | 16                 | 6                            |
-| Obesity Prevention (PO) | ¿Cuál es la efectividad de las intervenciones de prevención de la obesidad entre los niños mexicanos?        | 20                            | 9828             | 29                 | 2                            |
-
-
-
-### Models
-
-- BM25 
-- Dual encoder PLM (mBERT, BETO, XLM-R Galén and bsc-bio-ehr-es)
-- Cross attention re-ranker model 
 
 
 
