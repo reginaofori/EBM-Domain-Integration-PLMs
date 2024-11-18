@@ -36,7 +36,7 @@ For more details, please check the latest version of the paper
 - transformers
 ```
 
-### Spanish SR Train/Test Dataset
+###SR Train/Test Dataset
 
 - The proposed model underwent finetuning and evaluation on ten complex medical SLR
 abstract datasets encompassing both human and animal studies. These are the Aceves-Martins 2022, Aceves-Martins 2021 data,Muthu 2022,Van Dis, Wassenaar 2017, Menon 2022, Leenars 2019, Oud 2018, and Nelson 2006—are publicly available on the a modified [GitHub](https://github.com/asreview/synergy-dataset)
